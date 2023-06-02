@@ -1,0 +1,32 @@
+{
+  "name": "exercise",
+  "version": "1.0.0",
+  "description": "This is the Git and Node basic learning project",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run watch:all",
+    "scss": "node-sass -o css/ css/",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+    "lite": "lite-server",
+    "watch:all": "npm-run-all --parallel watch:scss lite"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "lite-server": "^2.6.1",
+    "node-sass": "^9.0.0",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^3.3.0",
+    "parallelshell": "^3.0.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
+  }
+}
